@@ -1,0 +1,145 @@
+:root{
+  --primary-purple:hsl(259, 100%, 65%);
+  --primary-light-red:hsl(0, 100%, 67%);
+  --neutral-off-white: hsl(0, 0%, 94%);
+  --neutral-light-gray:hsl(0, 0%, 86%);
+  --neutral-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+  --font-size:32px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  /* position:relative; */
+}
+
+body{
+  margin: 0;
+  padding: 1.3em 0.5em 2em;
+  background-color: var(--neutral-off-white);
+  font-family: 'Poppins', sans-serif;
+
+}
+
+*,*::before,*::after{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+main{
+  margin:0 auto;
+  padding:1.3em;
+  width: 80%;
+  max-width: 550px;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom-right-radius:120px;
+  }
+
+
+label{
+  display:block;
+  text-transform: uppercase;
+  padding-bottom:0.2em;
+  color: var(--neutral-smokey-grey);
+  font-size: 0.8rem;
+}
+
+
+input,label{
+  font-weight: 400;
+ }
+
+.dateentrysection{
+  justify-content: space-between;
+  display: flex;
+  gap:1.2em;
+  margin:1em 0 2.5em; 
+  position: relative;
+}
+
+hr{
+margin-bottom: 4em;
+}
+
+input{
+  max-width: 65px;
+  padding:0.7em 1em;
+  border-radius: 5px;
+}
+
+input,hr{
+ border: 2px solid var(--neutral-light-gray);
+}
+
+small{
+  display: block;
+  color:red;
+}
+
+/*input:invalid + small, p.errmsg{
+  display:block;
+  color:red;
+}*/
+
+
+.movelower{
+ background-color: red;
+ }
+
+.imgicon{
+  display:flex;
+  background-color: var(--primary-purple);
+  width:45px;
+  height: 45px;
+  border-radius:50%;
+  position:absolute;
+  bottom:61%;
+  right:45%; 
+}
+
+
+
+.imgicon img{
+  width:40%;
+  margin: auto;
+}
+
+span{
+  color: var(--primary-purple);
+}
+
+h1{
+ line-height:0.5; 
+  font-size:2.7rem;
+}
+
+@media screen and (min-width:400px){
+  /* html{
+    position:relative;
+  } */
+  
+  main{
+    padding-right: 4em;
+    position: relative;
+  }
+  
+.dateentrysection{
+  justify-content:flex-start;
+}
+  
+hr{
+  margin-bottom: 1.5em;
+  }
+  
+.imgicon{
+  position:absolute;
+  right:17%;
+  top:37%;
+}  
+  
+}
+
+
